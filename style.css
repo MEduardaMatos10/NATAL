@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url("https://fynedecor.com.br/decor/wp-content/uploads/2021/11/Decoracao-de-natal-2021.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 40px;
+    width: 100vw; 
+    height: 100vh;
+    padding-right: 50px;
+}
+
+.box h1{
+    font-family: 'Sour Gummy' ;
+    text-align: right;
+    color: crimson;
+    font-size: 200px;
+    
+}
+
+.box button{
+    width: 200px;
+    height: 50px;
+    margin-right: 150px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: crimson;
+    color: white;
+}
+
+.box button:hover{
+    background-color: rgb(64, 22, 22);
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    align-items: center;
+}
+
+.modal-content {
+    background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p1/17077989-elementos-de-papel-em-forma-de-coracao-no-fundo-rosa-simbolosiais-de-amor-para-mulheres-felizes-mae-design-de-cartao-de-aniversario-vetor.jpg");
+    background-size: cover;
+    padding: 20px;
+    padding-top: 60px;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+
+.modal button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    font-family: 'Sour Gummy' ;
+}
+
+.modal button:hover {
+    background-color: rgb(64, 22, 22);
+}
+
+@media (max-width: 750px) {
+
+    .box h1 {
+        font-size: 90px;
+        padding-right: 30px;
+        font-family: 'Sour Gummy';
+        text-align: center;
+        color: #fff;
+    }
+
+    .box button {
+        width: 110px;
+        height: 50px;
+        margin-right: 110px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(219, 15, 56);
+        color: white;
+        font-family: 'Sour Gummy';
+    }
+
+    .box button:hover {
+        background-color: rgb(64, 22, 22);
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .modal-content {
+        background-image: url("https://img.freepik.com/fotos-premium/cartao-de-natal-na-mesa-de-madeira_392895-52242.jpg");
+        background-size: cover;
+        background-position: center;  /* Centraliza a imagem */
+        padding-top: 60px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .modal-content p {
+        padding-top: 200px;  /* Alinha o texto de forma centralizada */
+        font-size: 18px;
+        font-weight: 800;
+        font-family: 'Sour Gummy';
+        color: #000000;
+        text-align: center;
+    }
+
+    .modal button {
+        margin-top: 20px;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: crimson;
+        font-weight: 800;
+        color: white;
+        font-family: 'Sour Gummy';
+        margin-left: 55px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+    .box h1 {
+        font-size: 90px; 
+        padding-right: 30px;
+        font-family: 'Sour Gummy' ;
+        text-align: center;
+        color: #fff;        
+      
+    }
+
+    .box button{
+        width: 110px;
+        height: 50px;
+        margin-right: 110px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(219, 15, 56);
+        color: white;
+        font-family: 'Sour Gummy' ;
+    }
+
+    
+    .box button:hover{
+        background-color: rgb(64, 22, 22);
+    }
+
+    .modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+    
+
+    .modal-content {
+        background-image: url("https://img.freepik.com/fotos-premium/cartao-de-natal-na-mesa-de-madeira_392895-52242.jpg");
+        background-size: cover;
+        padding-top: 60px;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content p {
+        padding-top: 50px;
+        padding-left: 20px;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: 'Sour Gummy' ; 
+    }
+
+    .modal button {
+        margin-top: 20px;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: crimson;
+        font-weight: 800;
+        color: white;
+        font-family: 'Sour Gummy' ;
+        margin-left: 40px;
+        
+    }
+}
